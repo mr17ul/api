@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "branches",
+  "info": {
+    "name": "Branch"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "district": {
+      "model": "district"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

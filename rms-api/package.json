@@ -1,0 +1,47 @@
+{
+  "name": "customer-grievance",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "production": "cross-env NODE_ENV=production npm start"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@mysql/xdevapi": "8.0.21",
+    "cross-env": "^7.0.3",
+    "knex": "<0.20.0",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
+    "node-excel-export": "^1.4.4",
+    "sqlite3": "latest",
+    "strapi": "3.1.5",
+    "strapi-admin": "3.1.5",
+    "strapi-connector-bookshelf": "3.1.5",
+    "strapi-email-nodemailer": "^0.2.1",
+    "strapi-plugin-content-manager": "3.1.5",
+    "strapi-plugin-content-type-builder": "3.1.5",
+    "strapi-plugin-email": "^3.0.5",
+    "strapi-plugin-upload": "3.1.5",
+    "strapi-plugin-users-permissions": "3.1.5",
+    "strapi-provider-email-nodemailer": "^2.0.0",
+    "strapi-provider-email-nodemailer-smtp": "^1.0.1",
+    "strapi-utils": "3.1.5",
+    "xlsx-style": "^0.8.13"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "e546cc0f-4062-4aa4-8866-58e4667d4875"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/complaint-categories",
+      "handler": "complaint-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/complaint-categories/count",
+      "handler": "complaint-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/complaint-categories/:id",
+      "handler": "complaint-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/complaint-categories",
+      "handler": "complaint-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/complaint-categories/:id",
+      "handler": "complaint-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/complaint-categories/:id",
+      "handler": "complaint-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

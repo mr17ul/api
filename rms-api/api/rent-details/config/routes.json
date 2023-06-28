@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rent-details",
+      "handler": "rent-details.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-details/count",
+      "handler": "rent-details.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-details/:id",
+      "handler": "rent-details.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rent-details",
+      "handler": "rent-details.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rent-details/:id",
+      "handler": "rent-details.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rent-details/:id",
+      "handler": "rent-details.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rent-masters/branch-statement/:rmId/:from/:to",
+      "handler": "rent-master.branchStatement",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-masters/report/:fromMonth/:fromYear/:month/:year/:state",
+      "handler": "rent-master.monthlyReport",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-masters/dashboard",
+      "handler": "rent-master.dashboard",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-masters",
+      "handler": "rent-master.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-masters/count",
+      "handler": "rent-master.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-masters/:rmId/:from/:to",
+      "handler": "rent-master.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rent-masters/:id",
+      "handler": "rent-master.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rent-masters",
+      "handler": "rent-master.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rent-masters/:id",
+      "handler": "rent-master.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rent-masters/:id",
+      "handler": "rent-master.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "routes": [
+        {
+            "method": "POST",
+            "path": "/recaptcha",
+            "handler": "misc.validateRecaptcha",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
+}

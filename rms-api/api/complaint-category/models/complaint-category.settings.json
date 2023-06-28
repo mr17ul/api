@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaint_categories",
+  "info": {
+    "name": "ComplaintCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "code": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "complaint": {
+      "via": "complaint_categories",
+      "model": "complaint"
+    }
+  }
+}

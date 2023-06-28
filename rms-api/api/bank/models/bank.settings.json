@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banks",
+  "info": {
+    "name": "Bank"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "code": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "head": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rent_masters",
+  "info": {
+    "name": "RentMaster"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "state": {
+      "model": "state"
+    },
+    "bank": {
+      "model": "bank"
+    },
+    "LandlordName": {
+      "type": "string"
+    },
+    "LandlordAccountNumber": {
+      "type": "string"
+    },
+    "LandlordEmail": {
+      "type": "email"
+    },
+    "LandlordConfirmAccountNumber": {
+      "type": "string"
+    },
+    "LandlordMobile": {
+      "type": "biginteger"
+    },
+    "branch": {
+      "model": "branch"
+    },
+    "IFSC": {
+      "type": "string"
+    },
+    "DepositAmount": {
+      "type": "biginteger"
+    },
+    "DepositUTR": {
+      "type": "string"
+    },
+    "DepositDate": {
+      "type": "date"
+    },
+    "AgreementDate": {
+      "type": "date"
+    },
+    "AgreementExpiryDate": {
+      "type": "date"
+    },
+    "Remark": {
+      "type": "richtext"
+    },
+    "Attachment": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "district": {
+      "model": "district"
+    },
+    "rent_details": {
+      "collection": "rent-details"
+    },
+    "branch_actions": {
+      "collection": "branch-action"
+    },
+    "ValidUntil": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "branch_actions",
+  "info": {
+    "name": "BranchAction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "actionMonth": {
+      "type": "date"
+    },
+    "action": {
+      "type": "string"
+    },
+    "rent_master": {
+      "model": "rent-master"
+    }
+  }
+}

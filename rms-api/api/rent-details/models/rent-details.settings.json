@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rent_details",
+  "info": {
+    "name": "RentDetails"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "From": {
+      "type": "date"
+    },
+    "ToDate": {
+      "type": "date"
+    },
+    "RentAmount": {
+      "type": "biginteger"
+    }
+  }
+}

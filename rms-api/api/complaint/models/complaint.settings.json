@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaints",
+  "info": {
+    "name": "Complaint"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "member_name": {
+      "type": "string"
+    },
+    "member_id": {
+      "type": "string"
+    },
+    "group_name": {
+      "type": "string"
+    },
+    "group_id": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    },
+    "complaint_categories": {
+      "collection": "complaint-category",
+      "via": "complaint"
+    },
+    "branch": {
+      "model": "branch"
+    },
+    "complaint_date": {
+      "type": "datetime"
+    },
+    "signature": {
+      "type": "string"
+    }
+  }
+}

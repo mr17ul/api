@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/error-checks",
+      "handler": "error-check.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/error-checks/count",
+      "handler": "error-check.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/error-checks/:id",
+      "handler": "error-check.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/error-checks",
+      "handler": "error-check.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/error-checks/:id",
+      "handler": "error-check.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/error-checks/:id",
+      "handler": "error-check.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaction_details",
+  "info": {
+    "name": "transaction_details"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "utr": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "txn_date": {
+      "type": "date"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "month": {
+      "type": "string"
+    },
+    "rent_master": {
+      "model": "rent-master"
+    }
+  }
+}

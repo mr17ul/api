@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaint_actions",
+  "info": {
+    "name": "ComplaintAction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "complaint": {
+      "model": "complaint"
+    },
+    "action_taken": {
+      "type": "string"
+    },
+    "action_date": {
+      "type": "datetime"
+    },
+    "remarks": {
+      "type": "text"
+    },
+    "resolution_date": {
+      "type": "datetime"
+    },
+    "role": {
+      "plugin": "users-permissions",
+      "model": "role"
+    }
+  }
+}
